@@ -4,15 +4,11 @@
 % uses right image as reference
 
 
-try
+if exist('C:\Users\Richard\Documents\MATLAB', 'dir')
     addpath('C:\Users\Richard\Documents\MATLAB\flow-code-matlab')     % this is flow to color
-catch
-    addpath('C:\Users\richa\Documents\MATLAB\flow-code-matlab')     % this is flow to color
-end
-
-try
     addpath('C:\Users\Richard\Documents\MATLAB\gco-v3.0\matlab')      % Graph Cuts
-catch
+else
+    addpath('C:\Users\richa\Documents\MATLAB\flow-code-matlab')     % this is flow to color
     addpath('C:\Users\richa\Documents\MATLAB\gco-v3.0\matlab')      % Graph Cuts
 end
 load('flow_flagstone.mat')
